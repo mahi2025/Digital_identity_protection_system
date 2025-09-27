@@ -77,11 +77,10 @@ git clone https://github.com/yourusername/digital-identity-protection.git
 cd digital-identity-protection
 
 ### Set up a virtual environment and install dependencies:
-
-python -m venv venv
+```python -m venv venv
 source venv/bin/activate # Linux/Mac  
 .\venv\Scripts\activate # Windows  
-pip install -r requirements.txt
+pip install -r requirements.txt```
 
 ### Configure environment variables (API keys, database URI, Fayda ID API credentials) in .env file.
 
