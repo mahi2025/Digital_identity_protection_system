@@ -28,105 +28,99 @@ Starting with social media monitoring and evolving to sophisticated AI impersona
 
 # Problem Statement
 
-Personal data leaks on social media expose individuals to fraud, scams, and identity theft.
+- Personal data leaks on social media expose individuals to fraud, scams, and identity theft.
 
-AI technologies enable deepfake videos, cloned voices, and fake accounts that impersonate users convincingly.
+- AI technologies enable deepfake videos, cloned voices, and fake accounts that impersonate users convincingly.
 
-Traditional verification methods relying on name, email, or phone are easily bypassed by impersonators.
+- Traditional verification methods relying on name, email, or phone are easily bypassed by impersonators.
 
-Ethiopia lacks a tailored system that integrates national identity verification with AI-driven impersonation detection.
+- Ethiopia lacks a tailored system that integrates national identity verification with AI-driven impersonation detection.
 
-Citizens and public figures need a reliable, privacy-respecting system that detects and alerts identity threats early.
+- Citizens and public figures need a reliable, privacy-respecting system that detects and alerts identity threats early.
 
 # Key Features
+
 ### Phase 1 – SOCMINT Leak Detection
 
-Monitor public mentions of your name, phone, email, or brand on social media platforms: Facebook, Instagram, TikTok, Twitter, Telegram.
+- Monitor public mentions of your name, phone, email, or brand on social media platforms: Facebook.
+- Real-time alerts on suspicious data exposure.
 
-Multilingual support for Amharic and Afaan Oromo.
+### Phase 2 – Fayda National ID Integration
 
-Real-time alerts on suspicious data exposure.
+- One-time National ID submission as root identity verification.
 
-### Phase 2 – Fayda National ID Integration (National ID First Verification)
+- Cross-verification with official government databases to confirm authenticity and linked contact details.
 
-One-time National ID submission as root identity verification.
+- Flagging and alerting of mismatched identity claims to prevent impersonation.
 
-Cross-verification with official government databases to confirm authenticity and linked contact details.
+- Optional biometric verification if API access permits.
 
-Flagging and alerting of mismatched identity claims to prevent impersonation.
+- Monitoring for leaked ID data in dark web sources.
 
-Optional biometric verification if API access permits.
-
-Monitoring for leaked ID data in dark web sources.
-
-Secure, encrypted storage of identity data adhering to privacy best practices.
+- Secure, encrypted storage of identity data adhering to privacy best practices.
 
 ### Phase 3 – AI Impersonation Protection
 
-Detect fake social media accounts using your photos or name.
+- Detect fake social media accounts using your photos or name.
 
-Identify AI-generated deepfake videos and cloned voices through advanced audio-visual analysis.
+- Identify AI-generated deepfake videos and cloned voices through advanced audio-visual analysis.
 
-Continuous monitoring and a user-friendly threat dashboard.
+- Continuous monitoring and a user-friendly threat dashboard.
 
-Demo
-
-
+## Demo
 
 ## Installation & Setup
 
-Clone the repository:
+### Clone the repository:
 
 git clone https://github.com/yourusername/digital-identity-protection.git
 cd digital-identity-protection
 
-Set up a virtual environment and install dependencies:
+### Set up a virtual environment and install dependencies:
 
 python -m venv venv
-source venv/bin/activate  # Linux/Mac  
-.\venv\Scripts\activate   # Windows  
+source venv/bin/activate # Linux/Mac  
+.\venv\Scripts\activate # Windows  
 pip install -r requirements.txt
 
-Configure environment variables (API keys, database URI, Fayda ID API credentials) in .env file.
+### Configure environment variables (API keys, database URI, Fayda ID API credentials) in .env file.
 
-Initialize the database:
+### Initialize the database:
 
-alembic upgrade head
-
-Run backend server:
+### Run backend server:
 
 uvicorn app.main:app --reload
 
-Start frontend dashboard (React/Next.js):
+### Start frontend dashboard (React/Next.js):
 
 cd frontend
 npm install
 npm run dev
-Prerequisites
 
-Python 3.9+
+## Prerequisites
 
-Node.js 14+ and npm
+- Python 3.9+
 
-PostgreSQL or MongoDB database
+- Node.js 14+ and npm
 
-Access to social media APIs (Facebook)
+- PostgreSQL or MongoDB database
 
-Fayda National ID API
+- Access to social media APIs (Facebook)
 
-Basic knowledge of Docker (optional for containerized deployment)
+- Fayda National ID API
 
-Security Considerations
+- Basic knowledge of Docker (optional for containerized deployment)
 
-All sensitive data, including National ID details, is stored encrypted using AES-256.
+## Security Considerations
 
-Secure API endpoints with OAuth2 / JWT authentication.
+- All sensitive data, including National ID details, is stored encrypted using AES-256.
 
-Privacy-by-design ensures user data is never shared without explicit consent.
+- Secure API endpoints with OAuth2 / JWT authentication.
 
-Two-factor verification during ID submission prevents unauthorized account creation.
+- Privacy-by-design ensures user data is never shared without explicit consent.
 
-Regular audits and logging for suspicious activities.
+- Two-factor verification during FAN number submission prevents unauthorized account creation.
 
-Compliance with Ethiopian data protection laws and international privacy standards.
+- Regular audits and logging for suspicious activities.
 
+- Compliance with Ethiopian data protection laws and international privacy standards.
