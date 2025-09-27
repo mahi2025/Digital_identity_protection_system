@@ -84,19 +84,22 @@ source venv/bin/activate # Linux/Mac
 pip install -r requirements.txt 
 ```
 
-### Configure environment variables (API keys, database URI, Fayda ID API credentials) in .env file.
+### Configure environment variables 
+(API keys, database URI, Fayda ID API credentials) in .env file.
 
 ### Initialize the database:
 
 ### Run backend server:
 
-uvicorn app.main:app --reload
+```uvicorn app.main:app --reload```
 
 ### Start frontend dashboard (React/Next.js):
 
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
 ## Prerequisites
 
