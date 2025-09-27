@@ -22,7 +22,7 @@ Protecting Ethiopian citizens, influencers, and public figures in the AI era
 
 # Overview
 
-In today’s digital age, AI-generated impersonations and personal data leaks are increasingly frequent, threatening individuals' privacy and security. This project provides a comprehensive, Ethiopian-focused platform that detects personal data leaks on social media, identifies AI-based impersonation attempts, and leverages the Fayda National ID system for robust identity verification.
+In today’s digital age, AI-generated impersonations and personal data leaks are increasingly frequent, threatening individuals' privacy and security. This project provides a comprehensive, local platform that detects personal data leaks on social media, identifies AI-based impersonation attempts, and leverages the Fayda National ID system for robust identity verification.
 
 Starting with social media monitoring and evolving to sophisticated AI impersonation detection and official ID integration, this system empowers citizens, influencers, and public figures to effectively safeguard their digital identity and reputation.
 
@@ -47,17 +47,14 @@ Starting with social media monitoring and evolving to sophisticated AI impersona
 
 ### Phase 2 – Fayda National ID Integration
 
-- One-time National ID submission as root identity verification.
+- Secure user registration with national ID verification via Faya_ID API.
 
 - Cross-verification with official government databases to confirm authenticity and linked contact details.
 
 - Flagging and alerting of mismatched identity claims to prevent impersonation.
 
-- Optional biometric verification if API access permits.
+- Automated scanning for impersonation and identity leaks.
 
-- Monitoring for leaked ID data in dark web sources.
-
-- Secure, encrypted storage of identity data adhering to privacy best practices.
 
 ### Phase 3 – AI Impersonation Protection
 
@@ -65,16 +62,17 @@ Starting with social media monitoring and evolving to sophisticated AI impersona
 
 - Identify AI-generated deepfake videos and cloned voices through advanced audio-visual analysis.
 
-- Continuous monitoring and a user-friendly threat dashboard.
+- Detailed weekly or monthly status reports.
 
 ## Demo
 
 ## Installation & Setup
 
 ### Clone the repository:
-
-git clone https://github.com/yourusername/digital-identity-protection.git
+```bash
+git clone https://github.com/username/digital_identity_protection_system.git
 cd digital-identity-protection
+```
 
 ### Set up a virtual environment and install dependencies:
 ```bash
