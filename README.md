@@ -4,7 +4,7 @@ A security-focused educational project designed to help users protect their digi
 
 This project is structured to be scalable for future improvements such as AI/ML-based impersonation detection.
 
-🚀 Features
+## Features
 
 - Secure Registration using National ID (simulated with FAN number).
 
@@ -20,7 +20,7 @@ This project is structured to be scalable for future improvements such as AI/ML-
 
 - Future Ready: designed to later integrate with Fayda (Ethiopian National ID) and Facebook Graph API.
 
-📚 Project Phases
+## Project Phases
 
 - Foundation Setup – Project requirements, HTML structure, GitHub repo.
 
@@ -34,19 +34,20 @@ This project is structured to be scalable for future improvements such as AI/ML-
 
 - Security & Scalability Prep – Encryption, role-based access, future ML/AI roadmap.
 
-🛠 Tech Stack
+## Technologies 
 
-- - Frontend: HTML, CSS, JavaScript (React optional for scalability).
+--  Frontend: HTML, CSS, JavaScript (React optional for scalability).
 
-- - Backend: Node.js (Express.js)
+-- Backend: Node.js (Express.js)
 
-- - Database: MySQL or PostgreSQL
+-- Database: MySQL or PostgreSQL
 
-- - Reports: PDF generation with pdfkit (Node.js)
+-- Reports: PDF generation with pdfkit (Node.js)
 
-- - Security: bcrypt for password hashing, HTTPS support
+-- Security: bcrypt for password hashing, HTTPS support
 
-📂 Project Structure
+## Project Structure
+```bash
 digital-identity-protection/
 │── frontend/           # HTML, CSS, JS files
 │── backend/            # Node.js Express API
@@ -57,8 +58,8 @@ digital-identity-protection/
 │── reports/            # Generated reports (PDF or text)
 │── docs/               # Documentation, diagrams
 │── README.md           # This file
-
-⚡ Quick Start
+```
+## Installation & Setup
 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/digital-identity-protection.git
@@ -85,15 +86,15 @@ npm start
 
 Open frontend/index.html in your browser.
 
-🔐 Security Notes
+## Security Considerations
 
-Passwords are hashed using bcrypt.
+- Passwords are hashed using bcrypt.
 
-FAN numbers are simulated (no real Fayda API yet).
+- FAN numbers are simulated (no real Fayda API yet).
 
-Future versions can integrate with Fayda API and Facebook Graph API.
+- Future versions can integrate with Fayda API and Facebook Graph API.
 
-📈 Future Improvements
+## Future Improvements
 
 - Integration with Fayda API for real National ID verification.
 
@@ -105,7 +106,7 @@ Future versions can integrate with Fayda API and Facebook Graph API.
 
 - AI/ML-based impersonation detection.
 
-📄 License
+## License
 
 This project is for educational purposes only.
 You are free to use and modify it for learning, research, or demonstration.
