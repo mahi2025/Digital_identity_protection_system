@@ -1,128 +1,112 @@
-# Digital Identity Leak & Impersonation Protection System
+# Digital Identity and Protection System
 
-Protecting Ethiopian citizens, influencers, and public figures in the AI era
+A security-focused educational project designed to help users protect their digital identity on social media (starting with Facebook). The system provides a secure registration process, social media account linking, basic impersonation detection, alerts, and simple reports.
 
-# Table of Contents
+This project is structured to be scalable for future improvements such as AI/ML-based impersonation detection.
 
-## Overview
+🚀 Features
 
-## Problem Statement
+- Secure Registration using National ID (simulated with FAN number).
 
-## Key Features
+- Login System for verified users.
 
-## Demo
+- Social Media Linking (Facebook username for now).
 
-## Installation & Setup
+- Impersonation Check (Rule-Based ) detects duplicate usernames in the database.
 
-## Prerequisites
+- Alerts & Dashboard to notify users of suspicious activity.
 
-## Security Considerations
+- Report weekly/monthly account security summaries.
 
-## Contribution
+- Future Ready: designed to later integrate with Fayda (Ethiopian National ID) and Facebook Graph API.
 
-# Overview
+📚 Project Phases
 
-In today’s digital age, AI-generated impersonations and personal data leaks are increasingly frequent, threatening individuals' privacy and security. This project provides a comprehensive, local platform that detects personal data leaks on social media, identifies AI-based impersonation attempts, and leverages the Fayda National ID system for robust identity verification.
+- Foundation Setup – Project requirements, HTML structure, GitHub repo.
 
-Starting with social media monitoring and evolving to sophisticated AI impersonation detection and official ID integration, this system empowers citizens, influencers, and public figures to effectively safeguard their digital identity and reputation.
+- User Registration – Secure registration & login with FAN number.
 
-# Problem Statement
+- Link Accounts – Add Facebook username and display in dashboard.
 
-- Personal data leaks on social media expose individuals to fraud, scams, and identity theft.
+- Monitoring & Alerts – Simple rule-based impersonation checks.
 
-- AI technologies enable deepfake videos, cloned voices, and fake accounts that impersonate users convincingly.
+- Reports – Summaries and downloadable reports.
 
-- Traditional verification methods relying on name, email, or phone are easily bypassed by impersonators.
+- Security & Scalability Prep – Encryption, role-based access, future ML/AI roadmap.
 
-- Ethiopia lacks a tailored system that integrates national identity verification with AI-driven impersonation detection.
+🛠 Tech Stack
 
-- Citizens and public figures need a reliable, privacy-respecting system that detects and alerts identity threats early.
+- - Frontend: HTML, CSS, JavaScript (React optional for scalability).
 
-# Key Features
+- - Backend: Node.js (Express.js)
 
-### Phase 1 – SOCMINT Leak Detection
+- - Database: MySQL or PostgreSQL
 
-- Monitor public mentions of your name, phone, email, or brand on social media platforms: Facebook.
-- Real-time alerts on suspicious data exposure.
+- - Reports: PDF generation with pdfkit (Node.js)
 
-### Phase 2 – Fayda National ID Integration
+- - Security: bcrypt for password hashing, HTTPS support
 
-- Secure user registration with national ID verification via Faya_ID API.
+📂 Project Structure
+digital-identity-protection/
+│── frontend/           # HTML, CSS, JS files
+│── backend/            # Node.js Express API
+│   ├── routes/         # API routes (auth, accounts, alerts)
+│   ├── models/         # Database models
+│   └── controllers/    # Business logic
+│── database/           # SQL migrations, schema
+│── reports/            # Generated reports (PDF or text)
+│── docs/               # Documentation, diagrams
+│── README.md           # This file
 
-- Cross-verification with official government databases to confirm authenticity and linked contact details.
-
-- Flagging and alerting of mismatched identity claims to prevent impersonation.
-
-- Automated scanning for impersonation and identity leaks.
-
-
-### Phase 3 – AI Impersonation Protection
-
-- Detect fake social media accounts using your photos or name.
-
-- Identify AI-generated deepfake videos and cloned voices through advanced audio-visual analysis.
-
-- Detailed weekly or monthly status reports.
-
-## Demo
-
-## Installation & Setup
-
-### Clone the repository:
+⚡ Quick Start
+1. Clone the Repository
 ```bash
-git clone https://github.com/username/digital_identity_protection_system.git
+git clone https://github.com/your-username/digital-identity-protection.git
 cd digital-identity-protection
 ```
-
-### Set up a virtual environment and install dependencies:
+2. Install Dependencies
 ```bash
-python -m venv venv
-source venv/bin/activate # Linux/Mac  
-.\venv\Scripts\activate # Windows  
-pip install -r requirements.txt 
-```
-
-### Configure environment variables 
-(API keys, database URI, Fayda ID API credentials) in .env file.
-
-### Initialize the database:
-
-### Run backend server:
-
-```uvicorn app.main:app --reload```
-
-### Start frontend dashboard (React/Next.js):
-
-```bash
-cd frontend
+cd backend
 npm install
-npm run dev
 ```
+3. Setup Database
 
-## Prerequisites
+Install MySQL or PostgreSQL.
+```bash
+Create a database digital_identity_db.
+```
+Run the migration file in database/schema.sql.
 
-- Python 3.9+
+4. Run the Backend
+```bash
+npm start
+```
+5. Open Frontend
 
-- Node.js 14+ and npm
+Open frontend/index.html in your browser.
 
-- PostgreSQL or MongoDB database
+🔐 Security Notes
 
-- Access to social media APIs (Facebook)
+Passwords are hashed using bcrypt.
 
-- Fayda National ID API
+FAN numbers are simulated (no real Fayda API yet).
 
-- Basic knowledge of Docker (optional for containerized deployment)
+Future versions can integrate with Fayda API and Facebook Graph API.
 
-## Security Considerations
+📈 Future Improvements
 
-- All sensitive data, including National ID details, is stored encrypted using AES-256.
+- Integration with Fayda API for real National ID verification.
 
-- Secure API endpoints with OAuth2 / JWT authentication.
+- Use Facebook Graph API to monitor real profiles.
 
-- Privacy-by-design ensures user data is never shared without explicit consent.
+- Add image similarity detection for profile photos.
 
-- Two-factor verification during FAN number submission prevents unauthorized account creation.
+- Role-based admin panel.
 
-- Regular audits and logging for suspicious activities.
+- AI/ML-based impersonation detection.
 
-- Compliance with Ethiopian data protection laws and international privacy standards.
+📄 License
+
+This project is for educational purposes only.
+You are free to use and modify it for learning, research, or demonstration.
+
